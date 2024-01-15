@@ -2,16 +2,20 @@ package com.heroes.rpg.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
 @Entity
-@Table(name = "WOLF")
-public class WolfEntity extends Creature {
+@Table(name = "MMA_WOLF")
+public class WolfEntity extends Enemy {
+    private static final String NAME = "Fluffy";
+    private static final int MAX_HEALTH = 40;
+
+    public WolfEntity() {
+        super();
+        this.setName(NAME);
+        this.setHealth(MAX_HEALTH);
+    }
 }

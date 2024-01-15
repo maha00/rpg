@@ -8,14 +8,8 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
 @Entity
-@Table(name = "HERO")
+@Table(name = "MMA_HERO")
 public class HeroEntity extends Creature{
 
-    @Column(name = "LVL")
-    private int lvl;
-    @Column(name = "EP")
-    private int ep;
 }

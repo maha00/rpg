@@ -18,10 +18,14 @@ public abstract class Creature {
     private Long id;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "SAVEGAME_ID")
-    private SaveGameEntity savegame;
-    @Column(name = "NAME")
-    private String name;
-    @Column(name = "Health")
+    @JoinColumn(name = "GAME_STATE")
+    private GameStateEntity gameState;
+    @Column(name = "HEALTH")
     private int health;
+    @Column(name = "DAMAGE")
+    private int damage;
+    @Column(name = "LEVEL")
+    private int lvl;
+    @Column(name = "EXPERIENCE_POINTS")
+    private int ep;
 }

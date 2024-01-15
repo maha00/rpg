@@ -11,15 +11,13 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "SAVEGAME")
-public class SaveGameEntity {
+@Table(name = "MMA_GAME_STATE")
+public class GameStateEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
     private Long id;
-    @Column(name = "NAME")
-    private String name;
-    @Column(name = "ROUND")
+    @Column(name = "CURRENT_ROUND")
     private int round;
     
 }

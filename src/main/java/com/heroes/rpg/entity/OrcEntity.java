@@ -9,9 +9,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
 @Entity
-@Table(name = "ORC")
-public class OrcEntity extends Creature {
+@Table(name = "MMA_ORC")
+public class OrcEntity extends Enemy {
 }
